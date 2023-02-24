@@ -17,27 +17,36 @@
     <div class="container d-flex justify-content-center">
       <div class="row">
         <div class="col">
-          <div class="card" id="background">
+          <div class="card" id="targetObject1">
             <div class="card-body">
               <h5 class="card-title text-white">Latar Dinamis</h5>
-              <p class="card-text">
-                Ubah latar ini menhadi sesuai keinginan pengguna
+              <p class="card-text" id="targetObject2">
+                Ubah latar ini menjadi sesuai keinginan pengguna
               </p>
             </div>
           </div>
+          <select class="form-select mt-4" id="selected">
+            <option disabled selected>Open this select menu</option>
+            <option value="1">Warna Latar</option>
+            <option value="2">Warna Text</option>
+            <option value="3">Ukuran Text</option>
+            <option value="4">Jenis Font</option>
+            <option value="5">Lebar Konten</option>
+            <option value="6">Tinggi Konten</option>
+          </select>
           <div>
-            <label for="inputHexa" class="my-2">Input Warna</label>
+            <label for="inputHexa" class="my-2 label-text">InputValue</label>
             <input
               type="text"
-              class="form-control"
-              placeholder="masukan input warna "
+              class="form-control py-2"
+              placeholder="masukan value"
               aria-label="Username"
               aria-describedby="addon-wrapping"
-              id="inputHexa"
-              name="inputHexa"
+              id="inputValue"
+              name="inputValue"
             />
           </div>
-          <div class="class btn btn-primary w-100 my-3" onclick="ubahLatar()">
+          <div class="btn btn-primary my-3 w-100" onclick="ubahLatar()">
             Ubah Latar Warna
           </div>
         </div>
