@@ -20,3 +20,24 @@ const ubahLatar = () => {
     targetObject1.style.height = inputValue.value + "px";
   }
 };
+
+const mahasiswa = [
+  {
+    nama: "Chandra Halim",
+    umur: 25,
+  },
+  {
+    nama: "Gallih Gazzali",
+    umur: 23,
+  },
+  {
+    nama: "Christofel Sitompul",
+    umur: 22,
+  },
+];
+
+mahasiswa.map((e, index) => {
+  console.log(
+    `halo nama saya ${e.nama} dan umur saya adalah ${e.umur} ${index}`
+  );
+});
